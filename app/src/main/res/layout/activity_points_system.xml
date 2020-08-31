@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:background="#252424">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Earn 50 points and get $5 in store credit!"
+        android:textSize="50sp"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add Points"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:textSize="30sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:scaleY="4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/pointsNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        android:paddingBottom="50dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/redeemPointsBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Redeem Points!"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"/>
+
+</LinearLayout>
